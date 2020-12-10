@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>CSS Grid Layout 2</title>
+      <link rel="stylesheet" href="GridLayout2.css">
+    </head>
+    <body>
+      <form class="Form">
+        <fieldset id="customer">
+          <label for="customer-name">Name</label>
+            <input type="text" name="customer-name" id="customer-name" required>
+            <label for="phone-number">Phone</label>
+            <input type="tel" name="phone-number" id="phone-number">
+            <label for="email-address">Email</label>
+            <input type="email" name="email-address" id="email-address">
+        </fieldset>
+        <feildset id="taxi">
+          <legend>Which taxi do you require?</legend>
+          <label> <input type="radio" name="taxi" id="taxi-car" required value="car">Car </label>
+          <label> <input type="radio" name="taxi" id="taxi-van" required value="van">Van </label>
+          <label> <input type="radio" name="taxi" id="taxi-tuk" required value="tuktuk">Tuk Tuk </label>
+        </feildset>
+        <fieldset id="extras">
+          <legend>Extras</legend>
+          <label> <input type="checkbox" name="extras" id="extras-baby" value="baby">Baby Seat </label>
+          <label> <input type="checkbox" name="extras" id="extras-wheel" value="wheelchair">Wheelchair Access </label>
+          <label> <input type="checkbox" name="extras" id="extras-tip" value="tip">Stock Tip </label>
+        </fieldset>
+        <fieldset id="pickup">
+          <label for="pickup-time">Pickup Date/Time</label>
+          <input type="datetime-local" name="pickup-time" id="pickup-time" required>
+          <label for="pickup-place">Pickup Place</label>
+          <select name="pickup-place" id="pickup-place">
+            <option value="" selcted="selected">Select One</option>
+            <option value="Center">Global Mall</option>
+            <option value="Nature">Central Park</option>
+            <option value="Office">Mail Office</option>
+          </select>
+        </fieldset>
+        <fieldset id="dropoff">
+          <label for="droppoff-place">Dropoff Place</label>
+          <select name="dropoff-place" id="dropoff-place">
+            <option vlaue="" selected="selected">Select One</option>
+            <option vlaue="Food">Pizzaria</option>
+            <option vlaue="Food">Coffee Shop</option>
+            <option vlaue="Nature">Beach</option>
+          </select>
+        </fieldset>
+        <button id="submit">Submit Booking</button>
+      </form>
+    </body>
+  </html>

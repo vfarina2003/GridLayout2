@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+  }
+  .Form {
+    display: grid;
+    grid-template-areas:
+      "customer taxi"
+      "customer taxi"
+      "pickup extras"
+      "dropoff extras"
+      "submit submit";
+  	grid-template-columns: auto auto;
+  	grid-template-rows: auto auto auto auto;
+    grid-gap: .5em 2em;
+    background: #FAFAD2;
+    padding: 7em;
+  }
+  .Form button {
+    width: 150px;
+    height: 45px;
+    margin:0 auto;
+    background: gray;
+    color: white;
+    padding: 1em;
+    }
+  .Form input:not([type=radio]):not([type=checkbox]),
+  .Form select {
+   	width: 100%;
+    border: 5;
+    padding: .6em;
+    margin: .5em 0;
+  }
+  .Form label {
+   display: block;
+  }
+  fieldset {
+    border: 0;
+  }
+  #customer {
+    grid-area: customer;
+  }
+  #taxi {
+    grid-area: taxi;
+  }
+  #extras {
+    grid-area: extras;
+  }
+  #pickup {
+    grid-area: pickup;
+  }
+  #dropoff {
+    grid-area: dropoff;
+  }
+  #submit {
+    grid-area: submit;
+  }
